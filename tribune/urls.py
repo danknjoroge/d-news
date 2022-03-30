@@ -19,5 +19,7 @@ from django.urls import include, path, re_path
 
 urlpatterns = [
     path('admin/', admin.site.urls),
-    re_path(r'', include('news.urls'))
+    re_path(r'', include('news.urls')),
+    path(r'^tinymce/', include('tinymce.urls')),
+    # path("accounts/", include("django.contrib.auth.urls")),
 ]
